@@ -1,4 +1,6 @@
-@@ -0,0 +1,3 @@
-#3 lista de objetos 
-itens_maquiagem = ["blush, rímel, iluminador, pó, sombra"]
-print(itens_maquiagem)
+# Criando a lista de nomes
+nomes = ["Eduardo", "Mariana", "Henrique", "Otavio", "Lurian"]
+
+# Imprimindo todos os nomes
+for nome in nomes:
+    print(nome)
