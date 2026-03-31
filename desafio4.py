@@ -1,5 +1,6 @@
 # Calculadora simples em Python
 
+print("Bem-vindo à calculadora simples!")
 print("=== Calculadora Simples ===")
 
 # Solicita os números
@@ -15,7 +16,7 @@ print(" /  para divisão")
 
 operacao = input("Digite a operação: ")
 
-# Realiza a operação
+# Executa a operação escolhida
 if operacao == "+":
     resultado = num1 + num2
 elif operacao == "-":
@@ -30,4 +31,5 @@ elif operacao == "/":
 else:
     resultado = "Operação inválida!"
 
+# Exibe o resultado
 print("Resultado:", resultado)
