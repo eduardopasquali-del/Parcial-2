@@ -1,14 +1,35 @@
-#4CALCULADORA
-n1 = float(input("selecione um número: ") )
-n2 = float(input("selecione outro número") )
-operação = input("escolha uma operação [ soma, subtração, divisão ou multiplicação]: "]
-if operação == "soma":
-  print( n1 + n2)
-elif operação == "divisão":
-  print( n1 / n2)
-elif operação == "subtração":
-  print( n1 - n2)
-elif operação == "multiplicação":
-  print( n1 * n2)
+# Calculadora simples em Python
+
+print("Bem-vindo à calculadora simples!")
+
+# Solicita o primeiro número
+num1 = float(input("Digite o primeiro número: "))
+
+# Solicita o segundo número
+num2 = float(input("Digite o segundo número: "))
+
+# Solicita a operação
+print("Escolha a operação:")
+print(" +  para adição")
+print(" -  para subtração")
+print(" *  para multiplicação")
+print(" /  para divisão")
+operacao = input("Digite a operação: ")
+
+# Executa a operação escolhida
+if operacao == "+":
+    resultado = num1 + num2
+elif operacao == "-":
+    resultado = num1 - num2
+elif operacao == "*":
+    resultado = num1 * num2
+elif operacao == "/":
+    if num2 != 0:
+        resultado = num1 / num2
+    else:
+        resultado = "Erro: Divisão por zero!"
 else:
-  print("essa operação não existe")
+    resultado = "Operação inválida!"
+
+# Exibe o resultado
+print("Resultado:", resultado)
